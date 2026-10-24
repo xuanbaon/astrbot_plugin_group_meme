@@ -423,7 +423,7 @@ class GroupMeme(Star):
     @filter.command("群发表情")
     @filter.permission_type(filter.PermissionType.ADMIN)
     async def cmd_send_meme(self, event: AstrMessageEvent, target: str = "", mood: str = ""):
-        """把一张表情包发到指定群：/群发表情 669407365 开心"""
+        """把一张表情包发到指定群：/群发表情 123456789 开心"""
         result = await self._do_send_meme(target, mood, "")
         yield event.plain_result(result)
 
@@ -474,7 +474,7 @@ class GroupMeme(Star):
         """把一张表情包发送到指定的 QQ 群。
 
         Args:
-            group(string): 群号或群名片段，例如 669407365。
+            group(string): 群号或群名片段，例如 123456789。
             mood(string): 想表达的心情或氛围，例如 开心、委屈、无语；留空则随机。
             text(string): 随图一并发送的一句话，可留空。
         """
