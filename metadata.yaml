@@ -10,8 +10,8 @@ desc: >-
 help: |-
   /群发表情 <群号|群名> [心情]   发一张表情包到该群
   /群列表                        查看群号与正确的会话写法
-  一句话                         「在群里发张表情包」「去群里发张 669407365 委屈的」
-version: 1.1.0
+  一句话                         「在群里发张表情包」「去群里发张 123456789 委屈的」
+version: 1.1.1
 author: xuanbaon
 repo: https://github.com/xuanbaon/astrbot_plugin_group_meme
 astrbot_version: ">=4.17.0"
