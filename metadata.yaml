@@ -1,0 +1,21 @@
+name: group_meme
+display_name: 群发表情
+short_desc: 让 bot 把表情包发到指定 QQ 群，不再被会话 ID 卡住
+desc: >-
+  直接按群号或群名发送表情包/文字到指定群。插件自己解析平台 ID 与会话字符串，
+  不让你为「平台ID:GroupMessage:群号」这种拼接格式操心；图库自动从 data/plugin_data
+  里发现（有 catalog.json 的当带标签图库，有 packs/ 的当表情包集合），也可以在配置里
+  手动追加目录。支持 /群发表情、/群列表 命令、send_meme_to_group 工具，
+  以及「在群里发张表情包」这种不走大模型的一句话直发。
+help: |-
+  /群发表情 <群号|群名> [心情]   发一张表情包到该群
+  /群列表                        查看群号与正确的会话写法
+  一句话                         「在群里发张表情包」「去群里发张 669407365 委屈的」
+version: 1.1.0
+author: xuanbaon
+repo: https://github.com/xuanbaon/astrbot_plugin_group_meme
+astrbot_version: ">=4.17.0"
+tags:
+  - 群发
+  - 表情包
+  - 工具
