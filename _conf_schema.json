@@ -1,0 +1,27 @@
+{
+  "natural_trigger": {
+    "description": "允许一句话直接触发",
+    "type": "bool",
+    "default": true,
+    "hint": "管理员在群里说「发张表情包」、或私聊说「去群里发张表情包 群号」，插件直接用规则识别并发送，不经过大模型。模型被限流时这条通路仍然可用。"
+  },
+  "cooldown_seconds": {
+    "description": "同一群的发送冷却（秒）",
+    "type": "int",
+    "default": 5,
+    "slider": {"min": 0, "max": 300, "step": 1},
+    "hint": "防止模型连续调用把群刷屏。"
+  },
+  "auto_discover": {
+    "description": "自动发现图库",
+    "type": "bool",
+    "default": true,
+    "hint": "扫 data/plugin_data 下所有插件目录：带 packs/ 的当表情包集合，带 catalog.json 的当带标签图库。不需要知道插件叫什么名字。"
+  },
+  "libraries": {
+    "description": "额外的图库目录",
+    "type": "list",
+    "default": [],
+    "hint": "绝对路径，或相对 data/plugin_data 的路径。目录里只要有图片就会被收进来（按子目录名当标签）；里面有 catalog.json 则按图库解析。"
+  }
+}
